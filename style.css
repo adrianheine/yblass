@@ -1,0 +1,452 @@
+/*
+Theme Name: yBlass
+Theme URI: https://wordpress.org/themes/yblass/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
+Version: 1.2
+Template: twentyseventeen
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: yblass
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/*
+Theme Name: yBlass
+Theme URI: http://adrianlang.de/yblass.html
+Description: Simple, no images, german, 2.7.
+Tags: variable width, two columns, widget ready, widgets, right sidebar, simple, white, clean, valid CSS, valid XHTML
+Version: 1.1
+Author: Adrian Lang
+Author URI: http://blog.adrianlang.de
+*/
+
+/* general stuff */
+code {
+font-family: "Courier New", "Lucida Console", Arial;
+}
+
+.block-image {
+margin: 0 0.6em 0.6em;
+border: solid #555 1px;
+}
+
+.content-area img {
+background:#ccc;
+border:1px solid #222;
+padding:1px;
+}
+
+blockquote {
+background:#EFF8FB;
+border: 0.05rem solid #ccc;
+margin: 1.8rem 0.55rem;
+padding: 0.55rem;
+line-height: 1.2rem;
+font-size: 1.1rem;
+}
+
+
+a {
+  background-color: #F2F0EB;
+}
+
+.internal-link, a[href^="./"], a[href^="?"], a[href^="/^/"], a[href^="#"], a[href^="https://blog.adrianheine.de"] {
+  background-color: transparent;
+}
+
+a {
+text-decoration: none;
+color:#777;
+}
+
+a:hover {
+color:#000 !important;
+background-color:#EFF8FB !important;
+-webkit-box-shadow: none !important;
+box-shadow: none !important;
+}
+
+.clear {
+clear:both;
+}
+
+/* body
+--------------------------------------------------*/
+body {
+font-family: "Lucida Grande", "Lucida Sans Unicode", verdana, geneva, sans-serif;
+color:#333;
+background-color: white;
+}
+
+/* wrapper
+--------------------------------------------------*/
+.wrapper {
+width:76%;
+margin: 1em auto;
+}
+
+/* header
+--------------------------------------------------*/
+header .description {
+float:right;
+margin:45px 0 0;
+}
+
+/* navigation
+--------------------------------------------------*/
+.navigation-top .wrap {
+	padding: 0.3rem 0;
+}
+
+.navigation-top li {
+float:left;
+list-style:none;
+padding:0 0.5rem 0 0;
+line-height: 1.2rem;
+}
+
+.navigation-top li a {
+color:#777;
+background:#fff;
+font-family: "Lucida Grande", "Lucida Sans Unicode", Trebuchet MS;
+font-weight:400;
+padding:0.3rem;
+}
+
+/* header h1 (blogtitle)
+--------------------------------------------------*/
+.site-title {
+font-family:"Lucida Grande", "Lucida Sans Unicode", "Times New Roman", Times, serif;
+font-size:2.2rem;
+line-height: 2.4rem;
+font-weight:400;
+letter-spacing:-1px;
+}
+
+.site-branding {
+padding: 0 0 2.4rem 0;
+}
+
+.site-branding .wrap {
+border-top:0.15rem solid #EFF8FB;
+border-bottom:0.15rem solid #EFF8FB;
+padding: 0.45rem 0;
+}
+
+.site-title {
+text-transform: none;
+}
+
+/* content
+--------------------------------------------------*/
+
+.content-area p, .next-posts {
+line-height: 1.2rem;
+word-spacing:1px;
+text-align:justify;
+margin-bottom: 1.2rem;
+}
+
+.entry-content .more-link::before {
+	margin-top: 1.2rem;
+}
+
+.content-area blockquote p {
+    margin: 0;
+}
+
+body:not(.twentyseventeen-front-page) .entry-header {
+	padding: 0;
+}
+
+.content-area .entry-title, .content-area h2 {
+font-family:"Lucida Grande", "Lucida Sans Unicode", Trebuchet MS;
+font-size:1.5rem;
+font-weight:400;
+color:#999;
+border-bottom:0.1rem solid #EFF8FB;
+line-height:2.4rem;
+margin: 0 0 1.1rem 0;
+padding: 0;
+}
+
+.content-area h2, .content-area h3, .content-area h4, .content-area h5 {
+font:1.3rem "Lucida Grande", "Lucida Sans Unicode", Trebuchet MS;
+/*color:#222;*/
+margin:10px 0;
+}
+
+.content-area ul,ol {
+margin:10px 10px 10px 25px;
+}
+
+.without-sidebar ul,ol {
+margin:10px 10px 10px 25px;
+}
+
+/* border images / blockquote
+--------------------------------------------------*/
+a.more {
+display:block;
+text-align:right;
+color:#2F460D;
+margin:10px 0 0;
+}
+
+/* metadata under post
+--------------------------------------------------*/
+
+.post .entry-footer {
+border-bottom:0.1rem solid #ccc;
+border-top:1px solid #ccc;
+background-color:#EFF8FB;
+padding: 1em;
+}
+
+/* sidebar
+--------------------------------------------------*/
+
+h2.widget-title {
+letter-spacing:1px;
+font-size:1rem;
+padding:0.6rem 0;
+margin: 0;
+text-transform: none;
+line-height: 1.2rem;
+}
+
+.widget ul li {
+border-bottom:0.1rem solid #EFF8FB;
+border-top: 0;
+list-style:none;
+padding: 0.6rem 0.15rem 0.05rem 0;
+line-height: 1.2rem;
+margin: 0 0 0.5rem 0;
+}
+
+.search-form input[type="search"], .search-form .search-submit {
+background:#fff;
+color:#444;
+border:1px solid #eee;
+font-size:1rem;
+padding:0.15rem;
+line-height: 2rem; 
+}
+
+.search-form input[type="search"]:focus, .search-form .search-submit:focus {
+background:#fff;
+border:0.075rem solid #eee;
+}
+
+.search-form label { display: none }
+
+/* some input
+--------------------------------------------------*/
+input {
+border:1px solid #CCC;
+font-size:11px;
+}
+
+input:hover {
+border:1px solid #262626;
+}
+
+input:focus {
+border:1px solid #262626;
+}
+
+/* comments
+--------------------------------------------------*/
+#comments {
+font-size:0.9em;
+}
+
+#commentlist li {
+margin-bottom:1.5em;
+padding-bottom:1em;
+}
+
+#commentform {
+background:#fff;
+width:350px;
+text-align:left;
+margin:0;
+}
+
+#commentform textarea {
+background:#f8f7f6;
+border:1px solid #d6d3d3;
+width:480px;
+}
+
+#commentform #email,#commentform #author,#commentform #url {
+font-size:1.1em;
+background:#f8f7f6;
+border:1px solid #d6d3d3;
+width:350px;
+}
+
+#commentform input {
+margin-bottom:3px;
+}
+
+.comment-reply-link {
+	font-weight: initial;
+}
+.comment-reply-link .icon {
+	display: none;
+}
+
+/* footer
+--------------------------------------------------*/
+.site-footer {
+	border-top: 0;
+	margin:0;
+	line-height: 1.2rem;
+	padding: 1.2rem 0;
+}
+
+.site-footer .wrap {
+border-top:0.15rem solid #EFF8FB;
+padding:1.05rem 0 1.2rem 0;
+}
+
+.aligncenter {
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+.alignleft {
+float:left;
+margin: 0pt 0.6em 0.6em 0pt;
+}
+
+.alignright {
+float:right;
+margin: 0pt 0pt 0.6em 0.6em;
+}
+
+.wp-caption {
+border:1px solid #ddd;
+text-align:center;
+background-color:#f3f3f3;
+padding-top:4px;
+margin:10px;
+}
+
+.wp-caption img {
+border:0 none;
+margin:0;
+padding:0;
+}
+
+.wp-caption-dd {
+font-size:11px;
+line-height:17px;
+margin:0;
+padding:0 4px 5px;
+}
+
+.content-area li {
+border-bottom:0.1rem solid #EFF8FB;
+padding:10px;
+}
+
+ul.hor-list li {
+list-style:none;
+float:right;
+padding:0 0.5em;
+}
+
+ul.hor-list li + li {
+border-right: 0.05rem solid #000;
+height: 0.7rem;
+margin-bottom: 0.5rem;
+}
+
+.allowed-tags li {
+list-style:none;
+margin:0em;
+padding:0;
+}
+
+.comment-body {
+font-size:90%;
+}
+
+.image-desc {
+font-size: 95%;
+font-style: italic;
+margin-top: 0.6em;
+}
+
+/* 2017 overwrites */
+
+.navigation-top {
+	position: static;
+	border: 0;
+}
+
+.wrap, .navigation-top .wrap {
+	max-width: 60rem;
+	padding-left: 0em;
+	padding-right: 0em;
+}
+
+.page.page-one-column:not(.has-sidebar) #primary, .single-post:not(.has-sidebar) #primary {
+	max-width: none;
+}
+
+.site-header {
+	background-color: white;
+}
+
+.site-content { padding-top: 0 }
+
+.page-title {
+	font-size: 1rem;
+	line-height: 1.2rem;
+	margin: 0;
+}
+.page-header {
+	padding: 0.6rem 0 1.2rem 0;
+}
+
+.widget {
+	padding: 0.6rem 0 1.8rem;
+}
+
+.entry-meta {
+	line-height: 1.2rem;
+	padding: 0;
+}
+
+.blog .site-main > article, .archive .site-main > article, .search .site-main > article {
+	padding-bottom: 2.4rem;
+}
+
+.pagination, .comments-pagination {
+	margin: 0;
+	padding: 0.45rem 0 0.6rem 0;
+	border-top: 0.15rem solid #EFF8FB;
+	line-height: 1.2rem;
+}
+
+.page-numbers {
+	padding: 0.6rem;
+}
+
+.widget .tagcloud a, .widget.widget_tag_cloud a, .wp_widget_tag_cloud a {
+	margin: 0.2rem !important;
+	border-width: 0.05rem;
+	line-height: 1.2rem;
+	padding: 0.35rem !important;
+}
+
+#secondary {
+	padding: 1.2rem 0 2.4rem;
+}
