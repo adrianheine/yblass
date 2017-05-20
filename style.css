@@ -53,7 +53,7 @@ a {
   background-color: #F2F0EB;
 }
 
-.internal-link, a[href^="./"], a[href^="?"], a[href^="/^/"], a[href^="#"], a[href^="https://blog.adrianheine.de"] {
+.internal-link, a[href^="./"], a[href^="?"], a[href^="/"]:not([href^="//"]), a[href^="#"], a[href^="https://blog.adrianheine.de"] {
   background-color: transparent;
 }
 
